@@ -36,7 +36,6 @@ namespace Lab2.Controllers
         // Created method to acept a string as id 
         public ActionResult Details(string id)
         {
-            Console.Write("---------------------------This is the value:" + id);
             var selected = categoriesList.First<CategoriesModel>(x => String.Equals(x.Name, id));
 
             ViewBag.MyString = "You selected category: "+ id;
